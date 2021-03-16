@@ -4,79 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Портфолио</title>
-    <link rel="stylesheet" href="./css/modern-normalize.css"/>
+    <!-- <link rel="stylesheet" href="./css/main.min.css"> -->
+    <!-- <link rel="stylesheet" href="./css/modern-normalize.css"/> -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="./css/styles.css">
+    <!-- <link rel="stylesheet" href="./css/styles.css"> -->
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
 </head>       
 <body>
-    <header class="header-section portfolio-header">
-        <nav class="container main-nav">
-            <a href="./index.html" lang="en" class="logo"><span>Web</span>Studio</a>
-            <ul class="link">
-    
-                <li class="item">
-                    <a class="site-link" href="./index.html">Студия</a>
+    <header class="page-header portfolio-header">
+        <div class="container">
+        <nav class="page-header__nav">
+            <a href="./index.html" lang="en" class="logo"><span class="logo--blue">Web</span>Studio</a>
+            <ul class="site-nav">                   
+
+                <li class="site-nav__item">
+                    <a class="site-nav__link" href="./index.html">Студия</a>
                 </li>
-    
-                <li class="item">
-                    <a class="site-link current" href="./portfolio.html">Портфолио</a>
+                    
+                <li class="site-nav__item">
+                    <a class="site-nav__link site-nav__link--active" href="./portfolio.html">Портфолио</a>
                 </li>
-    
-                <li class="item">
-                    <a class="site-link" href="#contacts">Контакты</a>
+                    
+                <li class="site-nav__item">
+                    <a class="site-nav__link" href="#contacts">Контакты</a>
                 </li>
-    
-            </ul>
-    
-            <address class="nav-address">
             
-                <a href="mailto:info@devstudio.com" class="address-link mail">
-                    <svg class="icon-mail" width="16px" height="12px">
+            </ul>
+                
+            <address class="page-header__contact">
+            
+                <a href="mailto:info@devstudio.com" class="address-link">
+                    <svg class="icon-mail" width="16" height="12">
                         <use href="./images/icons.svg/sprite.svg#icon-mail"></use>
                     </svg>info@devstudio.com
                 </a>
             
-                <a href="tel:+380961111111" class="address-link tel">
-                    <svg class="icon-tel" width="10px" height="16px">
+                <a href="tel:+380961111111" class="address-link">
+                    <svg class="icon-tel" width="10" height="16">
                         <use href="./images/icons.svg/sprite.svg#icon-tel"></use>
                     </svg>+38 096 111 11 11
                 </a>
             
             </address>
         </nav>
+    </div>
     </header>
+
 
 
     <main>
         <section class="portfolio-section"> 
             <div class="container-portfolio"> 
                    <h1 class="visually-hidden">Наши проекты</h1>                            
-                    <ul class="option-btns">
-                        <li>
+                    <ul class="button-list">
+                        <li class="button-list__item">
                             <button type="button" class="option-btn">Все</button>
                         </li>
                         
-                        <li>
+                        <li class="button-list__item">
                             <button type="button" class="option-btn">Веб-сайт</button>
                         </li>
                        
-                        <li>
+                        <li class="button-list__item">
                             <button type="button" class="option-btn">Приложение</button>
                         </li>
                        
-                        <li>
+                        <li class="button-list__item">
                             <button type="button" class="option-btn">Дизайн</button>
                         </li>
                         
-                        <li>
+                        <li class="button-list__item">
                             <button type="button" class="option-btn">Маркетинг</button>
                         </li>           
                     </ul> 
-                        <ul class="flex-container">                                                                                                
-                            <li class="flex-element">                                
-                                <a class="flex-link">                                                                   
+                        <ul class="card-set">                                                                                                
+                            <li class="card-set__item">                                
+                                <a class="card-set__link">                                                                   
                                 <div class="portfolio-thumb">                                    
                                     <img src="./images/p1.jpg" alt="Фото сайта" width="370">                                 
                                     <div class="actions">
@@ -85,14 +89,14 @@
                                             шпионажа и атак на защищённые сервера конкурентов.</p>
                                     </div>
                                 </div>                                         
-                                <div class="card">
+                                <div class="card-set__meta">
                                     <h2 class="project-name">Технокряк</h2>
                                     <p class="project">Веб-сайт</p>
                                 </div>
                                 </a>                               
                             </li>  
-                            <li class="flex-element">                                                                                                                          
-                                <a class="flex-link">
+                            <li class="card-set__item">                                                                                                                          
+                                <a class="card-set__link">
                                 <div class="portfolio-thumb">
                                     <img src="./images/p2.jpg" alt="Постер" width="370">
                                     <div class="actions">
@@ -102,14 +106,14 @@
                                     </div>
                                 </div>
                                 
-                                <div class="card">
+                                <div class="card-set__meta">
                                     <h2 class="project-name">Постер New Orlean vs Golden Star</h2>
                                     <p class="project">Дизайн</p>                            
                                 </div>
                                 </a>
                             </li>                           
-                            <li class="flex-element">                              
-                                <a class="flex-link">
+                            <li class="card-set__item">                              
+                                <a class="card-set__link">
                                 <div class="portfolio-thumb">
                                     <img src="./images/p3.jpg" alt="Лого ресторана" width="370">
                                     <div class="actions">
@@ -119,14 +123,14 @@
                                     </div>
                                 </div>
 
-                                <div class="card">
+                                <div class="card-set__meta">
                                     <h2 class="project-name">Ресторан Seafood</h2>
                                     <p class="project">Приложение</p>
                                 </div>
                                 </a>                               
                             </li>                            
-                            <li class="flex-element">
-                                <a class="flex-link">
+                            <li class="card-set__item">
+                                <a class="card-set__link">
                                 <div class="portfolio-thumb">
                                     <img src="./images/p4.jpg" alt="Наушники" width="370">
                                     <div class="actions">
@@ -136,14 +140,14 @@
                                     </div>
                                 </div>
 
-                                <div class="card">
+                                <div class="card-set__meta">
                                     <h2 class="project-name">Проект Prime</h2>
                                     <p class="project">Маркетинг</p>                                       
                                 </div>
                                 </a>                               
                             </li>
-                            <li class="flex-element">                               
-                                <a class="flex-link">
+                            <li class="card-set__item">                               
+                                <a class="card-set__link">
                                 <div class="portfolio-thumb">
                                     <img src="./images/p5.jpg" alt="Две коробки" width="370">
                                     <div class="actions">
@@ -153,14 +157,14 @@
                                     </div>
                                 </div>
 
-                                <div class="card">
+                                <div class="card-set__meta">
                                     <h2 class="project-name">Проект Boxes</h2>
                                     <p class="project">Приложение</p>
                                 </div>
                                 </a>                               
                             </li>
-                            <li class="flex-element">                               
-                                <a class="flex-link">
+                            <li class="card-set__item">                               
+                                <a class="card-set__link">
                                 <div class="portfolio-thumb">
                                     <img src="./images/p6.jpg" alt="Монитор" width="370">
                                     <div class="actions">
@@ -169,14 +173,14 @@
                                             шпионажа и атак на защищённые сервера конкурентов.</p>
                                     </div>
                                 </div>
-                                <div class="card">
+                                <div class="card-set__meta">
                                     <h2 class="project-name">Inspiration has no Borders</h2>
                                     <p class="project">Веб-сайт</p>
                                 </div>
                                 </a>                                  
                             </li>                          
-                            <li class="flex-element">                                
-                                <a class="flex-link">
+                            <li class="card-set__item">                                
+                                <a class="card-set__link">
                                 <div class="portfolio-thumb">
                                     <img src="./images/p7.jpg" alt="Журнал" width="370">
                                     <div class="actions">
@@ -186,14 +190,14 @@
                                     </div>
                                 </div>
 
-                                <div class="card">
+                                <div class="card-set__meta">
                                     <h2 class="project-name">Издание Limited Edition</h2>
                                     <p class="project">Дизайн</p>
                                 </div>
                                 </a>                               
                             </li>                          
-                            <li class="flex-element">                                
-                                <a class="flex-link">
+                            <li class="card-set__item">                                
+                                <a class="card-set__link">
                                 <div class="portfolio-thumb">
                                     <img src="./images/p8.jpg" alt="Этикетка" width="370">
                                     <div class="actions">
@@ -203,14 +207,14 @@
                                     </div>
                                 </div>    
                                 
-                                <div class="card">
+                                <div class="card-set__meta">
                                     <h2 class="project-name">Проект LAB</h2>
                                     <p class="project">Маркетинг</p>
                                 </div>
                                 </a>                                
                             </li>                           
-                            <li class="flex-element">                               
-                                <a class="flex-link">
+                            <li class="card-set__item">                               
+                                <a class="card-set__link">
                                 <div class="portfolio-thumb">
                                     <img src="./images/p9.jpg" alt="Ноутбук" width="370">
                                     <div class="actions">
@@ -220,7 +224,7 @@
                                     </div>
                                 </div>
 
-                                <div class="card">
+                                <div class="card-set__meta">
                                     <h2 class="project-name">Growing Business</h2>
                                     <p class="project">Приложение</p>
                                 </div>
@@ -234,40 +238,43 @@
     <footer class="footer-section">
         <div class="container-footer">
             <div>
-    
-                <a href="./index.html" lang="en" class="logo logo-footer"><span>Web</span>Studio</a>
+                <a href="./index.html" lang="en" class="logo logo-footer"><span class="logo--blue">Web</span>Studio</a>
                 <address id="contacts">
                     <p class="footer-location">г. Киев, пр-т Леси Украинки, 26</p>
                     <p><a href="mailto:info@example.com" class="footer-link">info@example.com</a></p>
                     <p><a href="tel:+380991111111" class="footer-link">+38 099 111 11 11</a></p>
                 </address>
             </div>
+    
             <div>
                 <b class="title-footer">Присоединяйтесь</b>
-                <ul class="media-footer">
+                <ul class="social-footer">
+    
                     <li>
-                        <a href="" class="link-social">
+                        <a href="" class="social-footer__link">
                             <svg class="insta" width="20" height="20">
                                 <use href="./images/icons.svg/sprite.svg#icon-instagram"></use>
                             </svg>
                         </a>
                     </li>
+    
                     <li>
-                        <a href="" class="link-social">
+                        <a href="" class="social-footer__link">
                             <svg class="tw" width="20" height="16.25">
                                 <use href="./images/icons.svg/sprite.svg#icon-twitter"></use>
                             </svg>
                         </a>
                     </li>
                     <li>
-                        <a href="" class="link-social">
+                        <a href="" class="social-footer__link">
                             <svg class="fb" width="10" height="20">
                                 <use href="./images/icons.svg/sprite.svg#icon-facebook"></use>
                             </svg>
                         </a>
                     </li>
+    
                     <li>
-                        <a href="" class="link-social">
+                        <a href="" class="social-footer__link">
                             <svg class="in" width="20" height="20">
                                 <use href="./images/icons.svg/sprite.svg#icon-linkedin"></use>
                             </svg>
@@ -275,13 +282,14 @@
                     </li>
                 </ul>
             </div>
+    
             <div>
                 <b class="title-footer">Подпишитесь на рассылку</b>
                 <form class="form-footer">
                     <label for="mail"></label>
                     <input type="email" name="mail" placeholder="E-mail">
                     <button type="submit" class="footer-button">Подписаться
-                        <svg class="icon-send" width="24px" height="24px">
+                        <svg class="icon-send" width="24" height="24">
                             <use href="./images/icons.svg/sprite.svg#icon-send"></use>
                         </svg>
                     </button>
