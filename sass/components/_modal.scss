@@ -156,8 +156,8 @@
 .field-policy__input:checked + .field-policy__icon {
   background-color: $blue;
   background-image: url(../images/icons.svg/icon-check.svg);
-  background-size: contain;
-  border-color: $blue;
+  border-color: $blue; 
+  background-repeat: no-repeat;
 }
 
 .field-policy__icon {
