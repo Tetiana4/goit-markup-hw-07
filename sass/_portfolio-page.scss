@@ -131,17 +131,18 @@
   padding: 20px 24px 54px;
 }
 
-.project-name {
+.card-set__name {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
 
-.project {
+.card-set__project {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
   margin-bottom: 0;
   margin-top: 4px;
+  color: $grey-text;
 }
