@@ -7,8 +7,9 @@
 
   color: #000000; 
   /* outline: 1px solid red; */  
+  
+  &--blue {
+  color: $blue;
+  }
 }
 
-.logo--blue {
-  color: $blue;
-}

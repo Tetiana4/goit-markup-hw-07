@@ -5,11 +5,10 @@
 
 .site-nav__item {
   margin-right: 50px;
-  /* outline: 1px solid red; */
-}
-
-.site-nav__item:last-child {
+  
+  &:last-child {
   margin-right: 0;
+  }
 }
 
 .site-nav__link {

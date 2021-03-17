@@ -102,14 +102,14 @@
   padding-left: 35px;
   height: 40px;
   width: 100%;
-}
 
-.input-form:focus + .icon-form {
+  &:focus + .icon-form {
   fill: $blue;
-}
+  }
 
-.input-form:focus {
+  &:focus {
   border: 1px solid $blue;
+  }
 }
 
 .icon-form {

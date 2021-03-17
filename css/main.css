@@ -336,7 +336,6 @@ h6 {
 
 .site-nav__item {
   margin-right: 50px;
-  /* outline: 1px solid red; */
 }
 
 .site-nav__item:last-child {
@@ -382,10 +381,6 @@ h6 {
   opacity: 1;
 }
 
-.address-link:last-child {
-  margin-left: 50px;
-}
-
 .address-link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -405,6 +400,10 @@ h6 {
 
 .address-link:hover, .address-link:focus {
   color: #2196f3;
+}
+
+.address-link:last-child {
+  margin-left: 50px;
 }
 
 .icon-mail {
@@ -508,22 +507,22 @@ h6 {
   background-color: #f5f4fa;
 }
 
-.advantages-list__item:nth-child(1):before {
+.advantages-list__item:nth-child(1)::before {
   background-image: url(../images/icons.svg/Vector1.svg);
   background-size: 65px;
 }
 
-.advantages-list__item:nth-child(2):before {
+.advantages-list__item:nth-child(2)::before {
   background-image: url(../images/icons.svg/Vector2.svg);
   background-size: 69px;
 }
 
-.advantages-list__item:nth-child(3):before {
+.advantages-list__item:nth-child(3)::before {
   background-image: url(../images/icons.svg/Vector3.svg);
   background-size: 70px;
 }
 
-.advantages-list__item:nth-child(4):before {
+.advantages-list__item:nth-child(4)::before {
   background-image: url(../images/icons.svg/Vector4.svg);
   background-size: 70px;
 }
@@ -542,6 +541,7 @@ h6 {
   font-size: 14px;
   line-height: 1.71;
   margin-bottom: 0;
+  color: #757575;
 }
 
 .calling-section {
@@ -573,6 +573,11 @@ h6 {
 
 .doing-list__thumb:not(:last-child) {
   margin-right: 30px;
+}
+
+.doing-list__img {
+  height: 294px;
+  width: 370px;
 }
 
 .doing-list__overflow {

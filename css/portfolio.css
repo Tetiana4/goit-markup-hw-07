@@ -336,7 +336,6 @@ h6 {
 
 .site-nav__item {
   margin-right: 50px;
-  /* outline: 1px solid red; */
 }
 
 .site-nav__item:last-child {
@@ -382,10 +381,6 @@ h6 {
   opacity: 1;
 }
 
-.address-link:last-child {
-  margin-left: 50px;
-}
-
 .address-link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -405,6 +400,10 @@ h6 {
 
 .address-link:hover, .address-link:focus {
   color: #2196f3;
+}
+
+.address-link:last-child {
+  margin-left: 50px;
 }
 
 .icon-mail {
@@ -486,7 +485,6 @@ h6 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-bottom: 50px;
   padding-left: 0;
   margin-top: 0;
   margin-bottom: 0;
@@ -520,7 +518,7 @@ h6 {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding-left: 0;
-  margin-top: 0;
+  margin-top: 50px;
 }
 
 .card-set__item {

@@ -26,25 +26,25 @@
   background-position: center;
   border-radius: 4px;
 
-  background-color: $back-lightwhite;
+  background-color: $back-lightwhite; 
 }
 
-.advantages-list__item:nth-child(1):before {
+.advantages-list__item:nth-child(1)::before {
   background-image: url(../images/icons.svg/Vector1.svg);
   background-size: 65px;
 }
 
-.advantages-list__item:nth-child(2):before {
-  background-image: url(../images/icons.svg/Vector2.svg);
-  background-size: 69px;
+.advantages-list__item:nth-child(2)::before {
+    background-image: url(../images/icons.svg/Vector2.svg);
+    background-size: 69px;
 }
 
-.advantages-list__item:nth-child(3):before {
+.advantages-list__item:nth-child(3)::before {
   background-image: url(../images/icons.svg/Vector3.svg);
   background-size: 70px;
 }
-
-.advantages-list__item:nth-child(4):before {
+  
+.advantages-list__item:nth-child(4)::before {
   background-image: url(../images/icons.svg/Vector4.svg);
   background-size: 70px;
 }
@@ -63,4 +63,5 @@
   font-size: 14px;
   line-height: 1.71;
   margin-bottom: 0;
+  color: $grey-text;
 }
